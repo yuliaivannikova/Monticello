@@ -1,0 +1,14 @@
+.sticky {
+    &>.container {
+        position: relative;
+    }
+
+    .sticky__nav {
+        position: fixed;
+        display: flex;
+        padding-top: 52px;
+        z-index: 5;
+    }
+
+
+}

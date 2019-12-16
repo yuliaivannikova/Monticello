@@ -1,0 +1,145 @@
+.news {
+    background-image: url(../../../../dist/img/bg-slider.png);
+    background-position: top;
+    background-size: cover;
+    padding-top: 173px;
+    padding-bottom: 180px;
+
+    &__title {
+        text-align: center;
+        color: white !important;
+        padding-bottom: 97px;
+    }
+
+    &__hr {
+        position: relative;
+
+
+        :before {
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            top: -23%;
+            left: 45.5%;
+        }
+
+    }
+
+    &__plate {
+        background-color: white;
+    }
+
+    &__col.col-4 {
+        max-width: 100%;
+    }
+
+    &__subtitle {
+        color: #2c4058;
+        font-family: 'GothamBook';
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 34px;
+        text-transform: uppercase;
+        padding-bottom: 3px;
+    }
+
+    &__section {
+        padding-top: 20px;
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+
+    &__text {
+        color: #4b5562;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: .1px;
+
+    }
+
+    &__name {
+        color: #2c4058;
+        font-family: 'GothamBook';
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 31px;
+    }
+
+    &__date {
+        color: #55b7ff;
+        font-family: 'GothamBook';
+        font-size: 14px;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding-top: 32px;
+        justify-content: space-between;
+        padding-right: 133px;
+        padding-bottom: 30px;
+
+        &--second {
+            padding-right: 71px;
+        }
+    }
+
+    &__details {
+        padding-top: 3px;
+    }
+
+    &__foto {
+        flex-shrink: 0
+    }
+
+
+}
+
+.slick-prev::before {
+
+    content: url(../../../../dist/img/arr-prev.png);
+}
+
+.slick-next::before {
+
+    content: url(../../../../dist/img/arr-next.png);
+
+}
+
+.my-slider .slick-dots li button::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 3333;
+    opacity: 1;
+}
+
+.my-slider .slick-dots li.slick-active button::before {
+    background-color: white;
+
+}
+
+.my-slider .slick-dots {
+    bottom: -79px;
+}
+
+.my-slider .slick-dots li {
+    margin: 0 8px;
+}
+
+.my-slider .slick-prev {
+    left: -83px;
+    top: 48%;
+}
+
+.my-slider .slick-next {
+    right: -66px;
+    top: 47%;
+}

@@ -1,0 +1,37 @@
+.social {
+    &__icon {
+
+        width: 40px;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.418);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+
+        &:hover {
+            background-color: white;
+        }
+
+        &:hover>i {
+            color: #7D5CF9;
+        }
+
+        &>i {
+            align-self: center;
+            color: white;
+            font-size: 15px;
+        }
+    }
+
+    &__item {
+        margin-right: 21px;
+    }
+
+    &__list {
+        display: flex;
+        padding-left: 24px;
+        padding-top: 7px;
+
+    }
+}

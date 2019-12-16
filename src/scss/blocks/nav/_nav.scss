@@ -1,0 +1,42 @@
+.nav {
+    padding-top: 16px;
+    padding-left: 112px;
+
+    &__dots {
+        position: absolute;
+        top: 6px;
+        left: -23px;
+        height: 9px;
+        width: 9px;
+        content: '';
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: transparent;
+
+
+    }
+
+    &__plate {
+        position: relative;
+
+        &:hover>.nav__dots {
+            background-color: white;
+
+        }
+    }
+
+    &__text {
+        color: white;
+        font-family: 'gothambold1';
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        margin-right: 91px;
+    }
+
+
+}
