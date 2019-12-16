@@ -95,7 +95,34 @@
         flex-shrink: 0
     }
 
+    &__img-link {
+        position: relative;
+        cursor: pointer;
 
+        &:hover .news__plus {
+            border: 1px solid white;
+            width: 80px;
+            height: 80px;
+
+        }
+
+    }
+
+    &__plus {
+        border: 1px solid transparent;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        z-index: 11;
+        top: 30%;
+        left: 38%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
 }
 
 .slick-prev::before {

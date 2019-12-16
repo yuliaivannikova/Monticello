@@ -37,12 +37,16 @@ var GM = {
 
     initMap: function () {
         var coordinates = {
-                lat: 40.724133,
-                lng: -74.003986
+                lat: 40.663323,
+                lng: -73.876256
             },
-            popupContent = this.$popupContent.html(),
+            coordinatesMarker = {
+                lat: 40.680993,
+                lng: -73.909858
+            }
+        popupContent = this.$popupContent.html(),
             markerImage = './img/marker.png',
-            zoom = 10;
+            zoom = 13.5;
 
 
         map = new google.maps.Map(document.getElementById('map'), {
@@ -52,7 +56,7 @@ var GM = {
                 scrollwheel: false
             }),
             marker = new google.maps.Marker({
-                position: coordinates,
+                position: coordinatesMarker,
                 map: map,
                 icon: markerImage
             });
@@ -169,7 +173,7 @@ var GM = {
                 "featureType": "water",
                 "elementType": "geometry",
                 "stylers": [{
-                    "color": "#C3A866"
+                    "color": "#c9c9c9"
                 }]
             },
             {
@@ -180,6 +184,8 @@ var GM = {
                 }]
             }
         ]
+
+
 
         map.setOptions({
             styles: styles

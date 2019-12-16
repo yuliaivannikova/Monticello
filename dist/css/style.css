@@ -3116,11 +3116,37 @@ html {
 
 .gallery {
   padding-top: 172px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 139px; }
   .gallery__title {
     font-family: 'gothamReg' !important;
     font-size: 44px;
-    color: #2c4058 !important; }
+    color: #2c4058 !important;
+    padding-bottom: 96px; }
+  .gallery__hr {
+    position: relative; }
+    .gallery__hr :before {
+      content: '';
+      width: 100px;
+      height: 1px;
+      background-color: #2c4058;
+      position: absolute;
+      top: -23%;
+      left: 45.5%; }
+    .gallery__hr__scroll {
+      position: relative; }
+  .gallery img {
+    max-width: 100%; }
+  .gallery__row {
+    margin-bottom: 9px; }
+  .gallery__img {
+    position: absolute;
+    top: 41%;
+    left: 44%;
+    z-index: 10;
+    pointer-events: none; }
+  .gallery__button {
+    margin-top: 57px; }
 
 .header {
   background-image: url(); }
@@ -3327,6 +3353,33 @@ html {
   .news__foto {
     -ms-flex-negative: 0;
     flex-shrink: 0; }
+  .news__img-link {
+    position: relative;
+    cursor: pointer; }
+    .news__img-link:hover .news__plus {
+      border: 1px solid white;
+      width: 80px;
+      height: 80px; }
+  .news__plus {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    z-index: 11;
+    top: 30%;
+    left: 38%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer; }
 
 .slick-prev::before {
   content: url(../../../../dist/img/arr-prev.png); }

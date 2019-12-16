@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../node_modules/remodal/dist/remodal-default-theme.css"/>
     <link rel="stylesheet" href="./css/slick.css"/>
     <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
@@ -98,7 +99,10 @@
           </div>
           <div class="row my-slider">
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img3.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus d-flex justify-content-center align-items-center"> <img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img3.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">See The Unmatched Beauty Of The Great. </h3>
                   <p class="news__text">Free directories: directories are perfect for customers that are... searching for  </p>
@@ -112,7 +116,10 @@
               </div>
             </div>
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img4.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus"><img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img4.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">Effective Advertising Pointers.</h3>
                   <p class="news__text">Having a home based business is a wonderful asset to your life... </p>
@@ -126,7 +133,10 @@
               </div>
             </div>
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img5.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus"><img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img5.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">Hypnotize Yourself Into The Ghost.</h3>
                   <p class="news__text">There are many things that are important to catalog design.... </p>
@@ -140,7 +150,10 @@
               </div>
             </div>
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img3.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus"><img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img3.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">See The Unmatched Beauty Of The Great. </h3>
                   <p class="news__text">Free directories: directories are perfect for customers that are... searching for  </p>
@@ -154,7 +167,10 @@
               </div>
             </div>
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img4.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus"><img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img4.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">Effective Advertising Pointers.</h3>
                   <p class="news__text">Having a home based business is a wonderful asset to your life... </p>
@@ -168,7 +184,10 @@
               </div>
             </div>
             <div class="col-4 news__col">
-              <div class="news__plate"><img class="news__img" src="../dist/img/img5.png"/>
+              <div class="news__plate">
+                <div class="news__img-link">
+                  <div class="news__plus"><img src="../dist/img/plus.png"/></div><img class="news__img" src="../dist/img/img5.png"/>
+                </div>
                 <div class="news__section">
                   <h3 class="news__subtitle">Hypnotize Yourself Into The Ghost.</h3>
                   <p class="news__text">There are many things that are important to catalog design.... </p>
@@ -192,7 +211,24 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="button"><a class="button__link">see more</a></div>
+            <div class="col-6 pr-1">
+              <div class="gallery__scroll"><a data-fancybox="gallery" href="../dist/img/img7max.png"><img src="../dist/img/img7.png"/></a><img class="gallery__img" src="../dist/img/img6.png"/></div>
+            </div>
+            <div class="col-6">
+              <div class="row gallery__row">
+                <div class="col-6 pl-1 pr-1"><a data-fancybox="gallery" href="../dist/img/img8max.png"><img src="../dist/img/img8.png"/></a></div>
+                <div class="col-6 pl-1"><a data-fancybox="gallery" href="../dist/img/img10max.png"><img src="../dist/img/img10.png"/></a></div>
+              </div>
+              <div class="row">
+                <div class="col-6 pl-1 pr-1"><a data-fancybox="gallery" href="../dist/img/img9max.png"><img src="../dist/img/img9.png"/></a></div>
+                <div class="col-6 pl-1"><a data-fancybox="gallery" href="../dist/img/img11max.png"><img src="../dist/img/img11.png"/></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="button gallery__button"><a class="button__link">see more                </a></div>
+            </div>
           </div>
         </div>
       </section>
@@ -261,6 +297,8 @@
     <script src="https://kit.fontawesome.com/0b79355df0.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOQlByLnQ-dSIiIN3gjMZ2E7QSsauhHx4"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

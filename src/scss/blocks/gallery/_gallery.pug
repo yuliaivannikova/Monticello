@@ -5,5 +5,27 @@ mixin gallery
                 h2.title.gallery__title gallery
         .container
             .row
-                .button
-                    a.button__link see more
+                .col-6.pr-1
+                    .gallery__scroll
+                        a(data-fancybox="gallery" href="../dist/img/img7max.png")
+                            img(src="../dist/img/img7.png")
+                        img.gallery__img(src="../dist/img/img6.png")
+                .col-6
+                    .row.gallery__row
+                        .col-6.pl-1.pr-1
+                            a(data-fancybox="gallery" href="../dist/img/img8max.png")
+                                img(src="../dist/img/img8.png")
+                        .col-6.pl-1
+                            a(data-fancybox="gallery" href="../dist/img/img10max.png")
+                                img(src="../dist/img/img10.png")
+                    .row
+                        .col-6.pl-1.pr-1
+                            a(data-fancybox="gallery" href="../dist/img/img9max.png")
+                                img(src="../dist/img/img9.png")
+                        .col-6.pl-1
+                            a(data-fancybox="gallery" href="../dist/img/img11max.png")
+                                img(src="../dist/img/img11.png")
+            .row
+                 .col-12.d-flex.justify-content-center
+                     .button.gallery__button
+                          a.button__link see more                

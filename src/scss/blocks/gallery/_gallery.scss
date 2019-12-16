@@ -1,11 +1,54 @@
 .gallery {
     padding-top: 172px;
     text-align: center;
+    padding-bottom: 139px;
 
     &__title {
         font-family: 'gothamReg' !important;
         font-size: 44px;
         color: #2c4058 !important;
+        padding-bottom: 96px;
 
+    }
+
+    &__hr {
+        position: relative;
+
+
+        :before {
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: #2c4058;
+            position: absolute;
+            top: -23%;
+            left: 45.5%;
+        }
+
+        &__scroll {
+            position: relative;
+        }
+
+
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    &__row {
+        margin-bottom: 9px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 41%;
+        left: 44%;
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    &__button {
+        margin-top: 57px;
     }
 }
