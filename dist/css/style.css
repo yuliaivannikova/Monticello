@@ -3114,6 +3114,14 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+.gallery {
+  padding-top: 172px;
+  text-align: center; }
+  .gallery__title {
+    font-family: 'gothamReg' !important;
+    font-size: 44px;
+    color: #2c4058 !important; }
+
 .header {
   background-image: url(); }
   .header__slide1 {
