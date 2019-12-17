@@ -3301,6 +3301,39 @@ html {
 
 .header {
   margin-top: -115px; }
+  .header__slide1 {
+    background-image: url(../../dist/img/slide1.png);
+    height: 800px;
+    background-position: top;
+    background-size: cover; }
+  .header__slide2 {
+    background-image: -webkit-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide2.jpg);
+    background-image: -o-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide2.jpg);
+    background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide2.jpg);
+    height: 800px;
+    background-position: top;
+    background-size: cover; }
+  .header__slide3 {
+    background-image: -webkit-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide3.jpg);
+    background-image: -o-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide3.jpg);
+    background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide3.jpg);
+    height: 800px;
+    background-position: top;
+    background-size: cover; }
+  .header__slide4 {
+    background-image: -webkit-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide4.jpg);
+    background-image: -o-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide4.jpg);
+    background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide4.jpg);
+    height: 800px;
+    background-position: top;
+    background-size: cover; }
+  .header__slide5 {
+    background-image: -webkit-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide5.jpg);
+    background-image: -o-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide5.jpg);
+    background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/slide5.jpg);
+    height: 800px;
+    background-position: top;
+    background-size: cover; }
   .header__title, .header__subtitle {
     color: #FFFFFF;
     font-family: 'gothambold1';
