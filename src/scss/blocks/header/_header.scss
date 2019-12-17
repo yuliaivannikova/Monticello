@@ -72,12 +72,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        background-color: transparent;
+
+        &:hover {
+            background-color: white;
+
+        }
     }
 
     &__icon {
         font-size: 10px;
         color: white;
+
     }
+
+    &__scroll:hover .header__icon {
+        color: violet;
+    }
+
 }
 
 

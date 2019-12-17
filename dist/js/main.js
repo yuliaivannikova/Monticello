@@ -198,3 +198,16 @@ var GM = {
 $(document).ready(function () {
     GM.init();
 });
+
+// scroll
+
+$(function () {
+    var scrollIcon = $(".header__scroll");
+    scrollIcon.on('click', function () {
+        var top = 0;
+        $('html,body').animate({
+            scrollTop: $(document).height()
+        }, 2000)
+    });
+
+});

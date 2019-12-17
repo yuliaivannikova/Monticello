@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../node_modules/remodal/dist/remodal-default-theme.css"/>
     <link rel="stylesheet" href="./css/slick.css"/>
     <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
@@ -18,22 +19,22 @@
         <div class="sticky__nav"><a class="sticky__logo" href="#"><img class="sticky__link" src="../dist/img/Logo.png"/></a>
           <nav class="nav">                      
             <ul class="nav__list d-flex">
-              <li class="nav__item"><a class="nav__link" href="#">
+              <li class="nav__item"><a class="nav__link" href="#gallery1">
                   <div class="nav__plate">
                     <div class="nav__dots"></div>
                     <p class="nav__text">about us</p>
                   </div></a></li>
-              <li class="nav__item"><a class="nav__link" href="#">
+              <li class="nav__item"><a class="nav__link" href="#projects">
                   <div class="nav__plate">
                     <div class="nav__dots"></div>
                     <p class="nav__text">projects</p>
                   </div></a></li>
-              <li class="nav__item"><a class="nav__link" href="#">
+              <li class="nav__item"><a class="nav__link" href="#news">
                   <div class="nav__plate">
                     <div class="nav__dots"></div>
                     <p class="nav__text">news </p>
                   </div></a></li>
-              <li class="nav__item"><a class="nav__link" href="#">
+              <li class="nav__item"><a class="nav__link" href="#contact">
                   <div class="nav__plate">
                     <div class="nav__dots"></div>
                     <p class="nav__text">contact           </p>
@@ -85,14 +86,14 @@
             </div>
           </div>
         </div>
-        <div class="header__scroll"> <i class="fas fa-chevron-down header__icon">         </i></div>
+        <div class="header__scroll"><i class="fas fa-chevron-down header__icon">        </i></div>
       </div>
     </header>
     <main>
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <div class="projects__hr">
-            <h2 class="projects__h2 title">what we do</h2>
+            <h2 class="projects__h2 title aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">what we do</h2>
           </div>
           <div class="row">
             <div class="col-7">
@@ -103,7 +104,7 @@
                 <h3 class="projects__subtitle">One World</h3>
                 <h2 class="projects__title title">Trade Center</h2>
                 <p class="projects__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
-                  <div class="button"> <a class="button__link">more details</a></div>
+                  <div class="button"><a class="button__link">more details</a></div>
                 </p>
                 <div class="projects__location"><i class="fas fa-map-marker-alt projects__icon"></i>
                   <p class="projects__adress">New York City, United States - 1776 feet</p>
@@ -130,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section class="news" id="news">
         <div class="container">
           <div class="news__hr">
             <h2 class="title news__title">latest news</h2>
@@ -244,7 +245,7 @@
       <section class="gallery">
         <div class="container">
           <div class="gallery__hr">
-            <h2 class="title gallery__title">gallery</h2>
+            <h2 class="title gallery__title" id="gallery1">gallery</h2>
           </div>
         </div>
         <div class="container">
@@ -273,7 +274,7 @@
       <section class="map">
         <div id="map"></div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <div class="row">   
             <div class="offset-2 col-8">
@@ -314,7 +315,7 @@
         </div>
       </section>
     </main>
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="container">
         <div class="row">
           <div class="offset-2 col-8">
@@ -353,6 +354,5 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </body>
 </html>

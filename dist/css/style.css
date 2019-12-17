@@ -3366,10 +3366,16 @@ html {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent; }
+    .header__scroll:hover {
+      background-color: white; }
   .header__icon {
     font-size: 10px;
     color: white; }
+  .header__scroll:hover .header__icon {
+    color: violet; }
 
 .header__slider.slick-dotted.slick-slider {
   margin-bottom: 0; }
@@ -3432,7 +3438,7 @@ html {
     line-height: 22px;
     text-transform: uppercase; }
   .nav__item {
-    margin-right: 91px; }
+    margin-right: 84px; }
 
 .news {
   background-image: url(../../dist/img/bg-slider.png);
@@ -3533,10 +3539,10 @@ html {
     cursor: pointer; }
 
 .slick-prev::before {
-  content: url(../../../../dist/img/arr-prev.png); }
+  content: url(../../dist/img/arr-prev.png); }
 
 .slick-next::before {
-  content: url(../../../../dist/img/arr-next.png); }
+  content: url(../../dist/img/arr-next.png); }
 
 .my-slider .slick-dots li button::before {
   content: '';
@@ -3706,11 +3712,6 @@ html {
 a {
   text-decoration: none;
   cursor: pointer; }
-
-*:hover {
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s; }
 
 body {
   background-color: white;
