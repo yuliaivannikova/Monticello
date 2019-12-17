@@ -2,27 +2,31 @@ mixin contact
     section.contact
         .container
             .row    
-                .col-8
-                    .row
-                        .col-12
-                            h2.title get in touch
-                    .row
-                        .col-6 
-                            .contact__plate
-                                .i.fas.fa-map-marker-alt.contact__icon
-                                a.contact__adress(href="#") 91 Nolan Extensions Suite 670
-                            .contact__plate
-                                .i.fas.fa-phone-alt.contact__icon
-                                a.contact__phone(href="tel:+0013568682454") +001 356-868-2454
-                            .contact__plate
-                                .i.fas.fa-inbox.contact__icon
-                                a.contact__mail(href="mailto:gahuy93@gmail.com") gahuy93@gmail.com
-                            .contact__plate
-                                .i.far.fa-clock.contact__icon
-                                a.contact__time(href="#") From 07:05AM to 19:30PM   
-                        .col-6
-                            form( method="GET")
-                                input.contact__input(required type="text" placeholder="Mollie Medina" name="Name")
-                                input.contact__input(required type="email" placeholder="Email" name="email")
-                                .contact__button
-                                    button.contact__submit(type="submit") submit
+                .offset-2.col-8
+                    .contact__bg
+                        .row
+                            .col-12.d-flex.justify-content-center
+                                .contact__hr
+                                    h2.title.contact__title get in touch
+                        .row
+                            .col-6 
+                                .contact__field
+                                    .contact__plate
+                                        i.fas.fa-map-marker-alt.contact__icon
+                                        a.contact__link(href="#") 91 Nolan Extensions Suite 670
+                                    .contact__plate
+                                        i.fas.fa-phone-alt.contact__icon
+                                        a.contact__link(href="tel:+0013568682454") +001 356-868-2454
+                                    .contact__plate
+                                        i.fas.fa-inbox.contact__icon
+                                        a.contact__link(href="mailto:gahuy93@gmail.com") gahuy93@gmail.com
+                                    .contact__plate
+                                        i.far.fa-clock.contact__icon
+                                        .contact__link(href="#") From 07:05AM to 19:30PM   
+                            .col-6
+                                form( method="GET")
+                                    .contact__field-right
+                                        input.contact__input(required type="text" placeholder="Mollie Medina" name="Name")
+                                        input.contact__input(required type="email" placeholder="Email" name="email")
+                                        .contact__button
+                                            button.contact__submit(type="submit") submit

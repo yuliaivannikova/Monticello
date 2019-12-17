@@ -1,11 +1,18 @@
 mixin footer
     .footer
         .container
-            a.footer__logo(href="#")
-                img.footer__link(src="../../dist/img/Logo.png")
-            +social
-        .container
-            .footer__copyright
-                p Copyrights © 2017 Monticello Group
-            .footer__author
-                p Made with <i class="fas fa-heart footer__icon"></i> by Ga Huy
+            .row
+                .offset-2.col-8
+                    .row
+                        .col-12
+                            .footer__plate
+                                a.footer__logo(href="#")
+                                    img.footer__link(src="../../dist/img/Logo.png")
+                                +social
+                    .row
+                        .col-12
+                            .footer__copyright--plate
+                                .footer__copyright
+                                    p Copyrights © 2017 Monticello 
+                                .footer__author
+                                    a Made with <i class="fas fa-heart footer__icon"></i> by Ga Huy

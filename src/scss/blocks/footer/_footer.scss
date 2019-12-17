@@ -1,0 +1,62 @@
+.footer {
+
+    background-image: linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/bg-footer.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    height: 528px;
+    margin-top: -150px;
+
+    &__plate {
+        margin-top: -14px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__copyright--plate {
+        display: flex;
+
+    }
+
+    &__copyright {
+        color: white;
+        font-family: 'GothamBook';
+        font-size: 14px;
+        font-weight: 300;
+
+
+    }
+
+    &__author {
+        color: white;
+        font-size: 14px;
+        font-family: 'GothamBook';
+    }
+
+    &__copyright--plate {
+        padding-top: 37px;
+    }
+
+    &__copyright {
+        padding-right: 41px;
+        position: relative;
+
+
+
+        &:after {
+            content: '';
+            width: 1px;
+            height: 20px;
+            opacity: 0.5;
+            background-color: white;
+            display: block;
+            position: absolute;
+            right: 8%;
+            bottom: 8%;
+        }
+
+
+    }
+
+}
