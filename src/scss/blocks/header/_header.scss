@@ -135,3 +135,13 @@
 .header .container-fluid {
     position: relative;
 }
+
+
+
+.header__slider>.slick-list>.slick-track>.slick-slide.slick-current>img {
+    opacity: 1;
+}
+
+.header__slider>.slick-list>.slick-track>.slick-slide:not(.slick-current)>img {
+    opacity: 0;
+}
