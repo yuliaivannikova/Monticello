@@ -4,7 +4,7 @@
     }
 
     .sticky__nav {
-        position: fixed;
+        position: sticky;
         display: flex;
         padding-top: 52px;
         z-index: 5;
