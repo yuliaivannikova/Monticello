@@ -3435,7 +3435,7 @@ html {
     margin-right: 91px; }
 
 .news {
-  background-image: url(../../../../dist/img/bg-slider.png);
+  background-image: url(../../dist/img/bg-slider.png);
   background-position: top;
   background-size: cover;
   padding-top: 173px;
