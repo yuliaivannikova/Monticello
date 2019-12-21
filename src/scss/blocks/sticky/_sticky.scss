@@ -8,6 +8,13 @@
         display: flex;
         padding-top: 52px;
         z-index: 5;
+
+        @media screen and (max-width: 991px) {
+
+            & {
+                justify-content: space-between;
+            }
+        }
     }
 
 

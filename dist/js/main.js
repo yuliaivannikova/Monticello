@@ -3,11 +3,10 @@ $('.header__slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoPlay: true,
     dots: true,
     vertical: true,
     verticalSwiping: true,
-    autoplay: true,
+    // autoplay: true,
     arrows: false
 });
 
@@ -216,18 +215,7 @@ $(function () {
 // navigation
 
 $(function () {
-    // var menuLink = $('.menu-link');
-    // var menu = $('menu');
-    // var close = $('.close-btn');
     var navLink = $('li a');
-
-    // menuLink.click(function() {
-    // 	menu.toggleClass('active-menu');
-    // });
-    // close.click(function() {
-    // 	menu.toggleClass('active-menu');
-    // });
-
     navLink.on('click', function (event) {
         event.preventDefault();
         var target = $(this).attr('href');
@@ -237,3 +225,40 @@ $(function () {
         }, 2000)
     });
 });
+
+$(function () {
+    var open = $('.nav__burger'),
+        menu = $('.nav__barlist'),
+        close = $('.nav__close'),
+        overlay = $('.nav__overlay');
+    link = $('.nav__barlink')
+
+    open.on('click', function () {
+        menu.toggleClass('nav__barlist--active');
+        overlay.show();
+    });
+    close.on('click', function () {
+        menu.toggleClass('nav__barlist--active');
+        overlay.hide();
+    })
+    link.on('click', function () {
+        menu.toggleClass('nav__barlist--active');
+        overlay.hide();
+    })
+    overlay.on('click', function () {
+        menu.toggleClass('nav__barlist--active');
+        overlay.hide();
+    })
+
+
+});
+
+// close.click(function() {
+//     modal.toggleClass('popup_active');
+
+// });
+// link.on('click', function () {
+//     fruitName.text($(this).attr('data-fruit'));
+
+//     modal.toggleClass('popup_active');
+// });

@@ -38,5 +38,138 @@
         margin-right: 84px;
     }
 
+    &__list {
+        display: block;
+        display: flex;
+    }
 
+    // navigation adaptive
+
+    &__barlist {
+        transition: ease .3s;
+        background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+        background-color: #4b4b4b;
+        width: 100%;
+        border: none;
+        position: absolute;
+        height: 600px;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 150px 0;
+
+        &--active {
+            transform: translateY(0%);
+            top: 0;
+            transition: ease .7s;
+        }
+
+
+    }
+
+
+
+
+    &__barlink {
+        display: flex;
+        justify-content: center;
+        color: white;
+        transition: ease .3s;
+        font-size: 25px;
+
+        &:hover .nav__text {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    &__burger {
+        cursor: pointer;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    &__burger span {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        display: block;
+        transition: all 0.8s;
+    }
+
+    &__burger:hover span {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__burger span:nth-child(1) {
+        transform: translateY(-6px);
+    }
+
+    &__burger span:nth-child(3) {
+        transform: translateY(6px);
+    }
+
+    &__close {
+        position: fixed;
+        top: 50px;
+        right: 25px;
+        font-size: 3rem;
+        transition: all 0.2s;
+        transform-origin: 50% 53%;
+        display: block;
+        line-height: 3rem;
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        transition: all 0.8s;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__bar .social__list {
+        justify-content: center;
+    }
+
+    &__overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .8);
+        display: none;
+    }
+
+
+    @media screen and (max-width: 991px) {
+
+        &__burger {
+            position: relative;
+        }
+
+        &__list {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 574px) {
+
+        &__burger {
+            position: absolute;
+            right: 42px;
+            top: 48px;
+            margin-right: 0;
+        }
+
+        &__barlink {
+            line-height: 47px;
+            font-size: 19px;
+        }
+    }
 }
