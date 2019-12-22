@@ -70,20 +70,21 @@
         &__plate .social__list {
             display: none;
         }
-    }
 
-    &__copyright::after {
-        height: 0;
-        width: 0;
-    }
 
-    &__copyright--plate {
-        flex-direction: column;
-        justify-content: space-between;
-    }
+        &__copyright::after {
+            height: 0;
+            width: 0;
+        }
 
-    &__copyright {
-        padding-bottom: 25px;
+        &__copyright--plate {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__copyright {
+            padding-bottom: 25px;
+        }
     }
 
 }

@@ -3266,7 +3266,7 @@ html {
     .contact__link {
       font-size: 16px; }
     .contact__input {
-      padding: 15px 0;
+      padding: 20px 0;
       margin-bottom: 4px; }
     .contact__button {
       -webkit-box-pack: center;
@@ -3332,20 +3332,20 @@ html {
       margin-top: 0; } }
   @media screen and (max-width: 575px) {
     .footer__plate .social__list {
-      display: none; } }
-  .footer__copyright::after {
-    height: 0;
-    width: 0; }
-  .footer__copyright--plate {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .footer__copyright {
-    padding-bottom: 25px; }
+      display: none; }
+    .footer__copyright::after {
+      height: 0;
+      width: 0; }
+    .footer__copyright--plate {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .footer__copyright {
+      padding-bottom: 25px; } }
 
 .gallery {
   padding-top: 172px;
@@ -3545,6 +3545,10 @@ html {
 @media screen and (max-width: 767px) {
   #map {
     height: 350px; } }
+
+@media screen and (max-width: 575px) {
+  #map {
+    height: 250px; } }
 
 .nav {
   padding-top: 16px;
