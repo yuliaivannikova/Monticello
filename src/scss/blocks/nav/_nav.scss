@@ -71,9 +71,6 @@
 
     }
 
-
-
-
     &__barlink {
         display: flex;
         justify-content: center;
@@ -153,7 +150,7 @@
             position: relative;
         }
 
-        &__list {
+        & {
             display: none;
         }
     }

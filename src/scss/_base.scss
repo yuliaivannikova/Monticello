@@ -17,6 +17,12 @@ body {
     }
 }
 
+// @media (min-width: 992px) {
+//     .container {
+//         max-width: 1200px;
+//     }
+// }
+
 // .text {
 //     &-left {
 //         text-align: left;
@@ -79,4 +85,16 @@ body {
     text-transform: uppercase;
     font-family: 'gothambold1';
 
+}
+
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .title {
+        font-size: 36px;
+    }
 }

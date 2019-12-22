@@ -3334,6 +3334,18 @@ html {
     height: 800px;
     background-position: top;
     background-size: cover; }
+  @media screen and (max-width: 991px) {
+    .header__slide1, .header__slide2, .header__slide3, .header__slide4, .header__slide5 {
+      height: 100%; }
+    .header .slide {
+      padding-top: 30%;
+      text-align: center; } }
+  @media screen and (max-width: 991px) and (max-width: 575px) {
+    .header .slide {
+      padding-top: 40%; } }
+  @media screen and (max-width: 991px) {
+    .header__subtitle {
+      padding-bottom: 30%; } }
   .header__title, .header__subtitle {
     color: #FFFFFF;
     font-family: 'gothambold1';
@@ -3348,8 +3360,21 @@ html {
     font-weight: 300;
     word-spacing: 17px;
     letter-spacing: 2.7px; }
+    @media screen and (max-width: 991px) {
+      .header__subtitle {
+        word-spacing: 0;
+        letter-spacing: 0; } }
   .header__title {
     padding-bottom: 25px; }
+    @media screen and (max-width: 991px) {
+      .header__title {
+        font-size: 68px; } }
+    @media screen and (max-width: 767px) {
+      .header__title {
+        font-size: 43px; } }
+    @media screen and (max-width: 575px) {
+      .header__title {
+        font-size: 35px; } }
   .header__scroll {
     position: absolute;
     left: 48.5%;
@@ -3562,7 +3587,7 @@ html {
   @media screen and (max-width: 991px) {
     .nav__burger {
       position: relative; }
-    .nav__list {
+    .nav {
       display: none; } }
   @media screen and (max-width: 574px) {
     .nav__burger {
@@ -3651,6 +3676,10 @@ html {
       border: 1px solid white;
       width: 80px;
       height: 80px; }
+    .news__img-link:hover .news__plus img {
+      display: block; }
+  .news__img {
+    max-width: 100%; }
   .news__plus {
     border: 1px solid transparent;
     border-radius: 50%;
@@ -3671,6 +3700,38 @@ html {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer; }
+  @media screen and (max-width: 1199px) {
+    .news__plate {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 1199px) {
+    .news {
+      padding-top: 10%;
+      padding-bottom: 10%; }
+    .news__title {
+      padding-bottom: 10%; }
+    .news__section {
+      min-height: 304px; }
+    .news__wrapper {
+      padding-right: 10%;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; } }
+  @media screen and (max-width: 575px) {
+    .news__hr ::before {
+      width: 0;
+      height: 0; } }
+  @media screen and (max-width: 991px) {
+    .news__subtitle {
+      font-size: 17px; } }
+
+.news__plus img {
+  display: none; }
 
 .slick-prev::before {
   content: url(../../dist/img/arr-prev.png); }
@@ -3694,6 +3755,9 @@ html {
 
 .my-slider .slick-dots {
   bottom: -79px; }
+  @media screen and (max-width: 1199px) {
+    .my-slider .slick-dots {
+      bottom: -8%; } }
 
 .my-slider .slick-dots li {
   margin: 0 8px; }
@@ -3784,7 +3848,43 @@ html {
       z-index: 0; }
   .projects__img {
     z-index: 3;
-    position: relative; }
+    position: relative;
+    max-width: 100%; }
+  @media screen and (max-width: 1199px) {
+    .projects__plate-img--first::after {
+      width: 100%;
+      height: 100%;
+      left: -6%; }
+    .projects__plate-img--second {
+      margin-left: 0; }
+      .projects__plate-img--second:after {
+        width: 100%;
+        height: 100%;
+        left: 4%; }
+    .projects {
+      padding-top: 10%;
+      padding-bottom: 10%; }
+    .projects__h2 {
+      padding-bottom: 20%; }
+    .projects__center {
+      padding-top: 10%; } }
+  @media screen and (max-width: 575px) {
+    .projects__hr ::before {
+      width: 0;
+      height: 0; } }
+  @media screen and (max-width: 991px) {
+    .projects__location {
+      padding-top: 10%;
+      font-size: 16px; }
+    .projects__adress {
+      font-size: 16px; }
+    .projects__plate {
+      padding-top: 5%; }
+    .projects__text {
+      font-size: 16px; } }
+  @media screen and (max-width: 767px) {
+    .projects__plate-img--second {
+      margin-top: 10%; } }
 
 .social__icon {
   width: 40px;
@@ -3906,3 +4006,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   font-family: 'gothambold1'; }
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 33px; } }
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 36px; } }

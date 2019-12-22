@@ -2,12 +2,12 @@ mixin projects
     section.projects(id="projects")
         .container
             .projects__hr
-                h2.projects__h2.title.aos-init.aos-animate(data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800") what we do
+                h2.projects__h2.title.aos-init what we do
             .row
-                .col-7
+                .col-12.col-md-6.col-xl-7
                     .projects__plate-img.projects__plate-img--first
                          img.projects__img(src="../dist/img/img1.png")
-                .col-5
+                .col-12.col-md-6.col-xl-5
                     .projects__plate
                         h3.projects__subtitle One World
                         h2.projects__title.title Trade Center
@@ -18,7 +18,7 @@ mixin projects
                             i.fas.fa-map-marker-alt.projects__icon
                             p.projects__adress New York City, United States - 1776 feet
             .row.projects__center
-                .col-5
+                .col-12.order-2.order-md-1.col-md-6.col-xl-5
                     .projects__plate
                         h3.projects__subtitle International
                         h2.projects__title.title Commerce Centre
@@ -28,6 +28,6 @@ mixin projects
                         .projects__location
                             i.fas.fa-map-marker-alt.projects__icon
                             p.projects__adress Hong Kong - 1588 Feet
-                .col-7
+                .col-12.order-1.order-md-2.col-md-6.col-xl-7
                     .projects__plate-img.projects__plate-img--second
                         img.projects__img.projects__img--second(src="../dist/img/img2.png")
