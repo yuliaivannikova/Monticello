@@ -6,7 +6,6 @@ $('.header__slider').slick({
     dots: true,
     vertical: true,
     verticalSwiping: true,
-    // autoplay: true,
     arrows: false,
     responsive: [{
             breakpoint: 991,
@@ -37,7 +36,8 @@ $('.my-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-
+    autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [{
             breakpoint: 1200,
             settings: {
@@ -259,21 +259,21 @@ $(document).ready(function () {
 
 // scroll
 
-$(function () {
-    var scrollIcon = $(".header__scroll");
-    scrollIcon.on('click', function () {
-        var top = 0;
-        $('html,body').animate({
-            scrollTop: $(document).height()
-        }, 2000)
-    });
+// $(function () {
+//     var scrollIcon = $(".header__scroll");
+//     scrollIcon.on('click', function () {
+//         var top = 0;
+//         $('html,body').animate({
+//             scrollTop: $(document).height()
+//         }, 2000)
+//     });
 
-});
+// });
 
 // navigation
 
 $(function () {
-    var navLink = $('li a');
+    var navLink = $('li a', '.header__scroll-projects');
     navLink.on('click', function (event) {
         event.preventDefault();
         var target = $(this).attr('href');

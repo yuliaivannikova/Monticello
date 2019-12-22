@@ -3979,7 +3979,13 @@ html {
       width: 0;
       height: 0; }
     .projects__plate-img--second:after {
-      left: 0; } }
+      left: 0; }
+    .projects__plate-img--first::after {
+      width: 0;
+      height: 0; }
+    .projects__plate-img--second:after {
+      width: 0;
+      height: 0; } }
   @media screen and (max-width: 991px) {
     .projects__location {
       padding-top: 10%;

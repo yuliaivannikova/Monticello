@@ -163,6 +163,21 @@
                 left: 0;
             }
         }
+
+        &__plate-img--first::after {
+            width: 0;
+            height: 0;
+
+        }
+
+        &__plate-img--second {
+
+            &:after {
+                width: 0;
+                height: 0;
+
+            }
+        }
     }
 
     @media screen and (max-width: 991px) {
