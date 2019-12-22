@@ -2,14 +2,14 @@ mixin contact
     section.contact(id="contact")
         .container
             .row    
-                .offset-2.col-8
+                .col-12.offset-xl-2.col-xl-8
                     .contact__bg
                         .row
                             .col-12.d-flex.justify-content-center
                                 .contact__hr
                                     h2.title.contact__title get in touch
                         .row
-                            .col-6 
+                            .col-12.col-md-6 
                                 .contact__field
                                     .contact__plate
                                         i.fas.fa-map-marker-alt.contact__icon
@@ -23,9 +23,9 @@ mixin contact
                                     .contact__plate
                                         i.far.fa-clock.contact__icon
                                         .contact__link(href="#") From 07:05AM to 19:30PM   
-                            .col-6
+                            .col-12.col-md-6
                                 form( method="GET")
-                                    .contact__field-right
+                                    .contact__field--right
                                         input.contact__input(required type="text" placeholder="Mollie Medina" name="Name")
                                         input.contact__input(required type="email" placeholder="Email" name="email")
                                         .contact__button

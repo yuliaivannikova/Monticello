@@ -51,4 +51,28 @@
     &__button {
         margin-top: 57px;
     }
+
+    @media screen and (max-width: 1199px) {
+        & {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        &__title {
+            padding-bottom: 10%;
+        }
+
+        & img.gallery__img {
+            max-width: 25%;
+        }
+
+    }
+
+    @media screen and (max-width: 575px) {
+        &__hr ::before {
+            width: 0;
+            height: 0;
+        }
+    }
+
 }

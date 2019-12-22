@@ -156,6 +156,13 @@
             width: 0;
             height: 0;
         }
+
+        &__plate-img--second {
+
+            &:after {
+                left: 0;
+            }
+        }
     }
 
     @media screen and (max-width: 991px) {

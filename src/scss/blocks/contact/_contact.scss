@@ -72,7 +72,29 @@
         }
     }
 
-    &__field-right {
+    &__input::placeholder {
+        color: #8E98A5;
+    }
+
+    &__input::-webkit-input-placeholder {
+        color: #8E98A5;
+    }
+
+    &__input::-moz-placeholder {
+        color: #8E98A5;
+    }
+
+    /* Firefox 19+ */
+    &__input:-moz-placeholder {
+        color: #8E98A5;
+    }
+
+    /* Firefox 18- */
+    &__input:-ms-input-placeholder {
+        color: #8E98A5;
+    }
+
+    &__field--right {
         padding-right: 59px;
     }
 
@@ -109,5 +131,70 @@
 
     &__plate:last-child {
         display: flex;
+    }
+
+    @media screen and (max-width: 1199px) {
+        & {
+            margin-top: 0;
+            position: relative;
+            background-color: white;
+            background-image: url(../../dist/img/bg-contact.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        &__bg {
+            height: 453px;
+            background-color: transparent;
+            background-image: none;
+            box-shadow: none;
+
+        }
+
+        &__title {
+            padding-top: 10%;
+        }
+
+        &__hr ::before {
+            width: 0;
+            height: 0;
+        }
+
+
+    }
+
+    @media screen and (max-width: 767px) {
+        &__field {
+            padding-left: 0;
+            flex-direction: column;
+            height: 150px;
+            margin-top: 0;
+            margin-bottom: 15px;
+
+            &--right {
+                padding-right: 0;
+            }
+        }
+
+        &__link {
+            font-size: 16px;
+        }
+
+        &__input {
+            padding: 15px 0;
+            margin-bottom: 4px;
+        }
+
+        &__button {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__button {
+            margin-top: 0;
+        }
     }
 }

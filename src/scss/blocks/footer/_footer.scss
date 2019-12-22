@@ -59,4 +59,31 @@
 
     }
 
+    @media screen and (max-width: 1199px) {
+        & {
+            height: 200px;
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__plate .social__list {
+            display: none;
+        }
+    }
+
+    &__copyright::after {
+        height: 0;
+        width: 0;
+    }
+
+    &__copyright--plate {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__copyright {
+        padding-bottom: 25px;
+    }
+
 }

@@ -3117,7 +3117,9 @@ html {
 .contact {
   margin-top: -303px;
   position: -webkit-sticky;
-  position: sticky; }
+  position: sticky;
+  /* Firefox 19+ */
+  /* Firefox 18- */ }
   .contact__bg {
     height: 453px;
     background-color: white;
@@ -3172,7 +3174,23 @@ html {
     margin-bottom: 10px; }
     .contact__input:focus {
       border-bottom: 1px solid #2C4058; }
-  .contact__field-right {
+  .contact__input::-webkit-input-placeholder {
+    color: #8E98A5; }
+  .contact__input:-ms-input-placeholder {
+    color: #8E98A5; }
+  .contact__input::-ms-input-placeholder {
+    color: #8E98A5; }
+  .contact__input::placeholder {
+    color: #8E98A5; }
+  .contact__input::-webkit-input-placeholder {
+    color: #8E98A5; }
+  .contact__input::-moz-placeholder {
+    color: #8E98A5; }
+  .contact__input:-moz-placeholder {
+    color: #8E98A5; }
+  .contact__input:-ms-input-placeholder {
+    color: #8E98A5; }
+  .contact__field--right {
     padding-right: 59px; }
   .contact__submit {
     color: #2c4058;
@@ -3213,6 +3231,50 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  @media screen and (max-width: 1199px) {
+    .contact {
+      margin-top: 0;
+      position: relative;
+      background-color: white;
+      background-image: url(../../dist/img/bg-contact.png);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .contact__bg {
+      height: 453px;
+      background-color: transparent;
+      background-image: none;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+    .contact__title {
+      padding-top: 10%; }
+    .contact__hr ::before {
+      width: 0;
+      height: 0; } }
+  @media screen and (max-width: 767px) {
+    .contact__field {
+      padding-left: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 150px;
+      margin-top: 0;
+      margin-bottom: 15px; }
+      .contact__field--right {
+        padding-right: 0; }
+    .contact__link {
+      font-size: 16px; }
+    .contact__input {
+      padding: 15px 0;
+      margin-bottom: 4px; }
+    .contact__button {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media screen and (max-width: 575px) {
+    .contact__button {
+      margin-top: 0; } }
 
 .footer {
   background-image: -webkit-linear-gradient(45deg, rgba(85, 184, 255, 0.8) 0%, rgba(126, 90, 255, 0.8) 100%), url(../../dist/img/bg-footer.png);
@@ -3264,6 +3326,26 @@ html {
       position: absolute;
       right: 8%;
       bottom: 8%; }
+  @media screen and (max-width: 1199px) {
+    .footer {
+      height: 200px;
+      margin-top: 0; } }
+  @media screen and (max-width: 575px) {
+    .footer__plate .social__list {
+      display: none; } }
+  .footer__copyright::after {
+    height: 0;
+    width: 0; }
+  .footer__copyright--plate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .footer__copyright {
+    padding-bottom: 25px; }
 
 .gallery {
   padding-top: 172px;
@@ -3298,6 +3380,18 @@ html {
     pointer-events: none; }
   .gallery__button {
     margin-top: 57px; }
+  @media screen and (max-width: 1199px) {
+    .gallery {
+      padding-top: 10%;
+      padding-bottom: 10%; }
+    .gallery__title {
+      padding-bottom: 10%; }
+    .gallery img.gallery__img {
+      max-width: 25%; } }
+  @media screen and (max-width: 575px) {
+    .gallery__hr ::before {
+      width: 0;
+      height: 0; } }
 
 .header {
   margin-top: -115px; }
@@ -3443,6 +3537,14 @@ html {
 #map {
   height: 700px;
   width: 100%; }
+
+@media screen and (max-width: 991px) {
+  #map {
+    height: 500px; } }
+
+@media screen and (max-width: 767px) {
+  #map {
+    height: 350px; } }
 
 .nav {
   padding-top: 16px;
@@ -3871,7 +3973,9 @@ html {
   @media screen and (max-width: 575px) {
     .projects__hr ::before {
       width: 0;
-      height: 0; } }
+      height: 0; }
+    .projects__plate-img--second:after {
+      left: 0; } }
   @media screen and (max-width: 991px) {
     .projects__location {
       padding-top: 10%;
