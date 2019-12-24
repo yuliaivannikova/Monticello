@@ -1,0 +1,164 @@
+.nav {
+  padding-top: 16px;
+  padding-left: 112px; }
+  .nav__dots {
+    position: absolute;
+    top: 6px;
+    left: -23px;
+    height: 9px;
+    width: 9px;
+    content: '';
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent; }
+  .nav__plate {
+    position: relative; }
+    .nav__plate:hover > .nav__dots {
+      background-color: white; }
+  .nav__text {
+    color: white;
+    font-family: 'gothambold1';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase; }
+  .nav__item {
+    margin-right: 84px; }
+  .nav__list {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .nav__barlist {
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+    background-image: -webkit-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+    background-image: -o-linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+    background-image: linear-gradient(45deg, #55b7ff 0%, #7e5aff 100%);
+    background-color: #4b4b4b;
+    width: 100%;
+    border: none;
+    position: absolute;
+    height: 600px;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 150px 0; }
+    .nav__barlist--active {
+      -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      top: 0;
+      -webkit-transition: ease .7s;
+      -o-transition: ease .7s;
+      transition: ease .7s; }
+  .nav__barlink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    -webkit-transition: ease .3s;
+    -o-transition: ease .3s;
+    transition: ease .3s;
+    font-size: 25px; }
+    .nav__barlink:hover .nav__text {
+      color: rgba(255, 255, 255, 0.7); }
+  .nav__burger {
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 20px; }
+  .nav__burger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    position: relative; }
+  .nav__burger::before {
+    content: 'jjjj';
+    width: 25px;
+    height: 3px;
+    display: block;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .nav__burger:hover span {
+    background-color: rgba(255, 255, 255, 0.7); }
+  .nav__burger span:nth-child(1) {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px); }
+  .nav__burger span:nth-child(3) {
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px); }
+  .nav__close {
+    position: fixed;
+    top: 50px;
+    right: 25px;
+    font-size: 3rem;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    -webkit-transform-origin: 50% 53%;
+    -ms-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+    display: block;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s; }
+    .nav__close:hover {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  .nav__bar .social__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .nav__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none; }
+  @media screen and (max-width: 991px) {
+    .nav__burger {
+      position: relative; }
+    .nav {
+      display: none; } }
+  @media screen and (max-width: 574px) {
+    .nav__burger {
+      position: absolute;
+      right: 42px;
+      top: 48px;
+      margin-right: 0; }
+    .nav__barlink {
+      line-height: 47px;
+      font-size: 19px; } }

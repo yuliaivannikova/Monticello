@@ -95,18 +95,58 @@
         background-color: white;
         display: block;
         transition: all 0.8s;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            display: block;
+            background-color: rgb(78, 17, 97);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: ease-out 0.5s;
+
+        }
     }
 
-    &__burger:hover span {
-        background-color: rgba(255, 255, 255, 0.7);
+    &__burger:hover span:before {
+        width: 25px;
+        height: 3px;
     }
+
+    &__burger:hover span:nth-child(1):before {
+        width: 15px;
+        height: 3px;
+    }
+
+    &__burger:hover span:nth-child(3):before {
+        width: 15px;
+        height: 3px;
+    }
+
+    // &__burger:hover span {
+    //     background-color: rgba(255, 255, 255, 0.7);
+    // }
 
     &__burger span:nth-child(1) {
         transform: translateY(-6px);
     }
 
+    &__burger:hover span:nth-child(1) {
+        transform: rotate(-19deg);
+        width: 15px;
+    }
+
     &__burger span:nth-child(3) {
         transform: translateY(6px);
+    }
+
+    &__burger:hover span:nth-child(3) {
+        transform: rotate(19deg);
+        width: 15px;
+
     }
 
     &__close {
@@ -124,8 +164,10 @@
         color: white;
         transition: all 0.8s;
 
+
         &:hover {
             transform: rotate(180deg);
+            color: rgb(78, 17, 97);
         }
     }
 

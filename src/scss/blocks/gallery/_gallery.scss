@@ -3,6 +3,10 @@
     text-align: center;
     padding-bottom: 139px;
 
+    &__click {
+        cursor: url(../../dist/img/click.png), auto !important;
+    }
+
     &__title {
         font-family: 'gothamReg' !important;
         font-size: 44px;
