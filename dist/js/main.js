@@ -1,3 +1,16 @@
+var lem = document.getElementById('lol');;
+console.log(lem);
+
+// lem.onmousemove = function () {
+//     var dy = _ymouse - mc._y;
+//     var dx = _xmouse - mc._x;
+//     var a = Math.atan2(dy, dx) / Math.PI * 180;
+//     mc._rotation = a;
+//     updateAfterEvent();
+// }
+
+
+
 //header slider
 $('.header__slider').slick({
     infinite: true,
@@ -36,7 +49,7 @@ $('.my-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
     responsive: [{
             breakpoint: 1200,

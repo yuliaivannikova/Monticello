@@ -185,6 +185,12 @@
         display: none;
     }
 
+    @media screen and (max-width: 1199px) {
+
+        &__text {
+            font-size: 12px;
+        }
+    }
 
     @media screen and (max-width: 991px) {
 

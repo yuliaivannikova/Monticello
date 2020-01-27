@@ -17,25 +17,10 @@ body {
     }
 }
 
-// @media (min-width: 992px) {
-//     .container {
-//         max-width: 1200px;
-//     }
-// }
-
-// .text {
-//     &-left {
-//         text-align: left;
-//     }
-
-//     &-center {
-//         text-align: center;
-//     }
-
-//     &-right {
-//         text-align: right;
-//     }
-// }
+* {
+    outline: none;
+    box-shadow: none;
+}
 
 .button__link {
     color: #2c4058;
